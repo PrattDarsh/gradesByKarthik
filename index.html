@@ -21,9 +21,20 @@
         border-radius: 72px;
     }
 
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 20px;
+        /* box-shadow: 0 -100vh 0 100vh #fbbf24; */
+    }
+
 </style>
 
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
     <section class="py-32" id="landing">
         <p class="text-white text-center text-5xl">Grades by <span class="font-bold">Karthik.</span> </p>
         <div class="h-1 bg-white w-12 mx-auto mt-12"></div>
