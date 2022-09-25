@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Yellowtail&display=swap" rel="stylesheet">
 
     <title>Grades By Karthik</title>
 </head>
@@ -20,6 +20,11 @@
     .round {
         border-radius: 72px;
     }
+
+    .cursive {
+        font-family: 'Yellowtail', cursive;
+    }
+
 
     /* ::-webkit-scrollbar {
         width: 8px;
@@ -37,82 +42,99 @@
 <body class=" overflow-x-hidden">
     <section class="h-screen flex items-center justify-center" id="landing">
         <div>
-            <p class="text-7xl">Grades By <span class="font-bold">Karthik.</span></p>
-            <p class="tracking-widest uppercase text-2xl text-right">Colorist</p>
+            <p class="text-7xl">Grades By <span class="font-bold cursive title">Karthik.</span></p>
+            <p class="tracking-widest uppercase text-2xl text-right title">Colorist</p>
         </div>
     </section>
 
-    <section class="h-screen bg-black flex items-center justify-center text-white relative ">
-        <p class=" max-w-4xl text-xl leading-loose">I am a Colorist from Bangalore, freelancing since two
-            years. I
-            specialise in
-            color grading, color correction
-            and conforming. Projects that I have worked on are related to AD films, TV Commercials, Short films, Music
-            videos and Documentaries.
+    <section class="h-screen bg-black flex items-center justify-center text-white relative" id="about">
+        <div class=" max-w-4xl text-xl leading-loose">
+            <p class="about">
+                I am a Colorist from Bangalore, freelancing since two
+                years. I
+                specialise in
+                color grading,</p>
+            <p class="about">
+                color correction
+                and conforming. Projects that I have worked on are related to AD films, TV</p>
 
-            Usually my process of working is that I understand the requirement of the the client and analyse the
-            challenge in the frame, and deliver the corresponding look and feel to the frame without compromising on the
-            quality. Hence providing client satisfaction.</p>
-        <p class="absolute text-8xl text-gray-700 top-4 left-4">About Me</p>
+            <p class="about"> Commercials, Short films, Music
+                videos and Documentaries.
+
+                Usually my process of</p>
+            <p class="about"> working is that I understand the requirement of the the client and analyse the
+                challenge</p>
+            <p class="about"> in the frame, and deliver the corresponding look and feel to the frame without</p>
+            <p class="about"> compromising on the
+                quality. Hence providing client satisfaction.</p>
+        </div>
+        <p class="absolute text-3xl md:text-9xl text-gray-700 top-4 left-4 aboutTitle"> About <span
+                class="font-bold">Me</span></p>
     </section>
 
-    <section class="relative py-56 px-4 md:px-12">
-        <p class="absolute text-8xl top-4 right-4">My Work</p>
+    <section class="relative py-56 px-4 md:px-12" id="work">
+        <p class="absolute text-9xl top-4 right-4 workTitle">My <span class="font-bold"> Work</span></p>
         <div class="flex items-center space-x-12 justify-center text-xl mb-12">
-            <button class="font-bold" onclick="show(1)" id="one">Category 1</button>
-            <button class="" onclick="show(2)" id="two">Category 2</button>
-            <button class="" onclick="show(3)" id="three">Category 3</button>
+            <button class="font-bold workMenu" onclick="show(1)" id="one">Category 1</button>
+            <button class="workMenu" onclick="show(2)" id="two">Category 2</button>
+            <button class="workMenu" onclick="show(3)" id="three">Category 3</button>
         </div>
         <div class="grid md:grid-cols-3 md:grid-rows-3 gap-4">
-            <img src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
-            <img src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
-            <img src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
-
-            <img class="col-span-2 row-span-2"
+            <img class="workPic"
                 src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
-            <img src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
-            <img src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
+            <img class="workPic"
+                src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
+            <img class="workPic"
+                src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
+
+            <img class="col-span-2 workPic row-span-2"
+                src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
+            <img class="workPic"
+                src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
+            <img class="workPic"
+                src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000" alt="">
         </div>
     </section>
 
-    <section class="bg-black relative ">
-        <p class="absolute text-8xl text-gray-700 top-4 left-4">My Clients</p>
+    <section class="bg-black relative " id="clients">
+        <p class="absolute text-9xl text-gray-700 top-4 left-4 clientsTitle">My <span class="font-bold"> Clients</span>
+        </p>
         <div class="grid md:grid-cols-4 md:grid-rows-3 py-56 items-center justify-center">
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/allensolly.png" class="" alt="">
             </div>
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
-                <img src="images/bmw_logo_PNG19714.png" class="mx-auto h-32" alt="">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
+                <img src="images/bmw_logo_PNG19714.png" class="mx-auto h-32 " alt="">
             </div>
-            <div class=" p-32 hover:bg-gray-900 border-r border-gray-800">
+            <div class=" p-32 hover:bg-gray-900 border-r border-gray-800 client">
                 <img src="images/flipkart-logo.png" class="h-full " alt="">
             </div>
 
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/gshock.png" class="" alt="">
             </div>
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/Kapiva.png" class="" alt="">
             </div>
-            <div class=" p-32 hover:bg-gray-900 border-r border-gray-800 ">
+            <div class=" p-32 hover:bg-gray-900 border-r border-gray-800 client">
                 <img src="images/khelraja.png" class="" alt="">
             </div>
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/mamaEarth.png" class="" alt="">
             </div>
-            <div class=" p-32 hover:bg-gray-900">
+            <div class=" p-32 hover:bg-gray-900 client">
                 <img src="images/MTR_Foods_Logo.svg.png" class="" alt="">
             </div>
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/nike.png" class="" alt="">
             </div>
-            <div class=" p-32 hover:bg-gray-900 border-gray-800 border-r ">
+            <div class=" p-32 hover:bg-gray-900 border-gray-800 border-r client">
                 <img src="images/nivea.png" class="" alt="">
             </div>
-            <div class="border-r p-32 border-gray-800 hover:bg-gray-900">
+            <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
                 <img src="images/Swiggy_logo.svg.png" class="" alt="">
             </div>
-            <div class=" p-32 hover:bg-gray-900 border-gray-800 border-r ">
+            <div class=" p-32 hover:bg-gray-900 border-gray-800 border-r client">
                 <img src="images/tharleBox.png" class="" alt="">
             </div>
         </div>
@@ -123,7 +145,7 @@
     <section class=" py-12 text-lg px-4 md:px-12 text-center  space-y-6 md:flex justify-between items-center">
         <div class=""><a href="#landing">Back to top</a> </div>
         <div class="">&copy;2022. All rights reserved.</div>
-        <div class="">Designed by<br><span class="text-2xl font-bold">Prateek</span> </div>
+        <div class="">Designed by<br><span class="text-4xl font-bold cursive">Prateek</span> </div>
     </section>
 
 
@@ -151,11 +173,35 @@
             }
         }
 
+        gsap.from('.title', { opacity: 0, x: 30, stagger: 0.1, duration: 2 })
+
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: '.sec4',
+                trigger: '#about',
                 toggleActions: 'play none none pause',
+                scrub: true,
+                start: 'top bottom'
+            }
+        }
 
+        )
+
+        let work = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#work',
+                toggleActions: 'play none none pause',
+                scrub: true,
+                start: 'top bottom'
+            }
+        }
+
+        )
+
+        let clients = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#clients',
+                toggleActions: 'play none none pause',
+                scrub: true,
                 start: 'top bottom'
             }
         }
@@ -165,17 +211,27 @@
 
 
 
-
-
         if (!isMobile) {
-            tl.from('.left', { x: 200, stagger: 0.1, })
-                .from('.right', { x: -200, stagger: 0.1 }, '-=0.5')
+            tl.from('.aboutTitle', { x: 300, })
+            tl.from('.about', { x: 30, opacity: 0, stagger: 0.1 }, '-=0.5')
 
+            work.from('.workTitle', { x: -300, })
+            work.from('.workMenu', { x: 30, stagger: 0.1, opacity: 0 }, '-=0.5')
+            work.from('.workPic', { rotate: 6, opacity: 0, stagger: 0.1 }, '-=0.5')
+
+            clients.from('.clientsTitle', { x: 300, })
+            clients.from('.client', { opacity: 0, stagger: 0.1 }, '-=0.5')
 
         } else {
-            tl.from('.left', { y: 200, stagger: 0.1, })
-                .from('.right', { y: -200, stagger: 0.1 }, '-=0.5')
+            tl.from('.left', { x: 30, })
+            tl.from('.about', { opacity: 0, stagger: 0.1 })
 
+            work.from('.workTitle', { x: -30, })
+            work.from('.workMenu', { x: 30, stagger: 0.1, opacity: 0 }, '-=0.5')
+            work.from('.workPic', { rotate: 6, opacity: 0, stagger: 0.1 }, '-=0.5')
+
+            clients.from('.clientsTitle', { x: 30, })
+            clients.from('.client', { opacity: 0, stagger: 0.1 }, '-=0.5')
         }
 
 
