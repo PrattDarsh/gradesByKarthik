@@ -41,14 +41,14 @@
 
 <body class=" overflow-x-hidden">
     <section class="h-screen flex items-center justify-center" id="landing">
-        <div>
-            <p class="text-7xl">Grades By <span class="font-bold cursive title">Karthik.</span></p>
-            <p class="tracking-widest uppercase text-2xl text-right title">Colorist</p>
+        <div class="max-w-xs md:max-w-4xl">
+            <p class="text-5xl md:text-7xl">Grades By <span class="font-bold cursive title">Karthik.</span></p>
+            <p class="tracking-widest uppercase text-2xl md:text-right title mt-12 md:mt-0">Colorist</p>
         </div>
     </section>
 
     <section class="h-screen bg-black flex items-center justify-center text-white relative" id="about">
-        <div class=" max-w-4xl text-xl leading-loose">
+        <div class=" max-w-4xl text-xl leading-loose px-4 md:px-0">
             <p class="about">
                 I am a Colorist from Bangalore, freelancing since two
                 years. I
@@ -68,12 +68,12 @@
             <p class="about"> compromising on the
                 quality. Hence providing client satisfaction.</p>
         </div>
-        <p class="absolute text-3xl md:text-9xl text-gray-700 top-4 left-4 aboutTitle"> About <span
+        <p class="absolute text-5xl md:text-9xl text-gray-700 top-4 left-4 aboutTitle"> About <span
                 class="font-bold">Me</span></p>
     </section>
 
     <section class="relative py-56 px-4 md:px-12" id="work">
-        <p class="absolute text-9xl top-4 right-4 workTitle">My <span class="font-bold"> Work</span></p>
+        <p class="absolute text-5xl md:text-9xl top-4 right-4 workTitle">My <span class="font-bold"> Work</span></p>
         <div class="flex items-center space-x-12 justify-center text-xl mb-12">
             <button class="font-bold workMenu" onclick="show(1)" id="one">Category 1</button>
             <button class="workMenu" onclick="show(2)" id="two">Category 2</button>
@@ -97,7 +97,8 @@
     </section>
 
     <section class="bg-black relative " id="clients">
-        <p class="absolute text-9xl text-gray-700 top-4 left-4 clientsTitle">My <span class="font-bold"> Clients</span>
+        <p class="absolute text-5xl md:text-9xl text-gray-700 top-4 left-4 clientsTitle">My <span class="font-bold">
+                Clients</span>
         </p>
         <div class="grid md:grid-cols-4 md:grid-rows-3 py-56 items-center justify-center">
             <div class="border-r p-32 border-gray-800 hover:bg-gray-900 client">
